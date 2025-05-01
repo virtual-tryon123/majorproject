@@ -1,0 +1,32 @@
+{
+    "_class_name": "DiffusionPipeline",
+    "_diffusers_version": "0.25.0",
+    "components": [
+      {
+        "name": "scheduler",
+        "library": "diffusers",
+        "class": "PNDMScheduler"
+      },
+      {
+        "name": "tokenizer",
+        "library": "transformers",
+        "class": "CLIPTokenizer"
+      },
+      {
+        "name": "text_encoder",
+        "library": "transformers",
+        "class": "CLIPTextModel"
+      },
+      {
+        "name": "unet",
+        "library": "diffusers",
+        "class": "UNet2DConditionModel"
+      },
+      {
+        "name": "vae",
+        "library": "diffusers",
+        "class": "AutoencoderKL"
+      }
+    ]
+  }
+  
